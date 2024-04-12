@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
+@font-face {
+    font-family: '字由青楷'; 
+    src: url('字由青楷.ttf') format('truetype');  
+}
 body {
     background-image: url('古风水墨山水.png');
     background-size: cover;
@@ -15,7 +19,4 @@ body {
 #questions .question {
     text-align: center;
 }
-@font-face {
-    font-family: '字由青楷'; 
-    src: url('字由青楷.ttf') format('truetype');  
-}
+
