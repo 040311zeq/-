@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    background-image: url(%E5%8F%A4%E9%A3%8E%E6%B0%B4%E5%A2%A8%E5%B1%B1%E6%B0%B4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.question {
+    margin-bottom: 10px;
+    font-family: STFangsong;
+    font-size: 22px;
+	text-align: center
+	}
+#questions .question {
+    text-align: center;
+}
