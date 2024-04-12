@@ -4,10 +4,11 @@ body {
     background-image: url('古风水墨山水.png');
     background-size: cover;
     background-repeat: no-repeat;
+	font-family: '字由青楷', sans-serif;
 }
 .question {
     margin-bottom: 10px;
-    font-family: STFangsong;
+    font-family: '字由青楷', sans-serif;
     font-size: 22px;
 	text-align: center
 	}
