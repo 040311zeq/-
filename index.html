@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"
+<title></title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url(Unnamed%20Site%202/%E5%8F%A4%E9%A3%8E%E6%B0%B4%E5%A2%A8%E5%B1%B1%E6%B0%B4.png);
+}.question {
+    margin-bottom: 10px;
+    font-family: STFangsong;
+    font-size: 22px;
+	text-align: center
+}
+#questions .question {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="question" id="questions">
+    <div class="question"><img src="Unnamed Site 2/2.png" width=100% alt=""/></div>
+	<div class="question">
+        <p>1.“浪淘尽”的“淘”是什么意思?</p>
+        <input type="radio" name="q1" value="1"> A.淘气<br>
+        <input type="radio" name="q1" value="2"> B.冲洗，冲刷<br>
+        <input type="radio" name="q1" value="3"> C.耗费<br>
+    </div>
+    <div class="question">
+        <p>2. “小乔初嫁了”中“初”是什么意思?</p>
+        <input type="radio" name="q2" value="1"> A.刚刚<br>
+        <input type="radio" name="q2" value="2"> B.原来<br>
+        <input type="radio" name="q2" value="3"> C.首次<br>
+    </div>
+  <div class="question">
+        <p>3. 请选择正确的字填入括号中：三国周（   ）赤壁。</p>
+        <input type="radio" name="q3" value="1"> A.朗<br>
+        <input type="radio" name="q3" value="2"> B.琅<br>
+        <input type="radio" name="q3" value="3"> C.郎<br>
+  </div>
+  <div class="question">
+    <p>4. 请选择正确的字填入括号中：遥想公（   ）当年。</p>
+        <input type="radio" name="q4" value="1"> A.谨<br>
+        <input type="radio" name="q4" value="2"> B.瑾<br>
+        <input type="radio" name="q4" value="3"> C.槿<br>
+  </div>
+	<div class="question">
+        <p style="font-size: 18px">5. 请选择正确的字填入括号中：人（   ）如梦，一（   ）还酹江月。</p>
+        <input type="radio" name="q5" value="1"> A.生，尊<br>
+        <input type="radio" name="q5" value="2"> B.间，尊<br>
+        <input type="radio" name="q5" value="3"> C.间，樽<br>
+		<input type="radio" name="q5" value="4"> D.生，樽<br>
+    </div>
+	<div>
+    	<button style="text-align: center; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; lenth=40; font-size: 18px;" onclick="calculateScore()">提交</button>
+	</div>
+	<div>
+    <img src="Unnamed Site 2/3.png" width=100%  alt=""/> </div>
+</div>
+
+<div  class="question" id="result" style="display: none;">
+  <h2>你的成绩:</h2>
+    <p id="score"></p>
+</div>
+
+<script>
+    function calculateScore() {
+        let score = 0;
+        const answers = {q1: "2",q2: "1",q3: "3",q4: "2",q5: "1"};
+
+        for (let i = 1; i <= Object.keys(answers).length; i++) 
+		{const question = document.querySelector(`input[name=q${i}]:checked`);
+		 	if (question) 
+			{if (question.value === answers[`q${i}`]) 
+				{score += 20;}
+            }
+        }
+
+        document.getElementById("questions").style.display = "none";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("score").innerText = `${score} 分！`;
+    }
+</script>
+</body>
+</html>
