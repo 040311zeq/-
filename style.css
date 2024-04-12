@@ -14,3 +14,7 @@ body {
 #questions .question {
     text-align: center;
 }
+@font-face {
+    font-family: '字由青楷'; 
+    src: url('字由青楷.ttf') format('truetype');  
+}
