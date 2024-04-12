@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    background-image: url('古风水墨山水.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.question {
+    margin-bottom: 10px;
+    font-family: STFangsong;
+    font-size: 22px;
+	text-align: center
+	}
